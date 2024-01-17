@@ -107,19 +107,19 @@
         "choices": [
           {
             "id": "a",
-            "content": " <div> Edward Smith </div>"
+            "content": "  Edward Smith"
           },
           {
             "id": "b",
-            "content": " <div> Christopher Columbus </div>"
+            "content": "  Christopher Columbus"
           },
           {
             "id": "c",
-            "content": " <div> Jack Sparrow </div>"
+            "content": "  Jack Sparrow"
           },
           {
             "id": "d",
-            "content": " <div> David Greene </div>"
+            "content": "  David Greene"
           }
         ],
         "points": 1.0

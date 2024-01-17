@@ -25,7 +25,6 @@ function showInstruction() {
 }
 
 function prepareAttempt() {
-  // reset all data
   const params = new URLSearchParams(window.location.search);
   const name = params.get("n");
   document.getElementById("name-tag").textContent = (name ? `Hi, ${name}` : ``);
@@ -38,17 +37,11 @@ function prepareAttempt() {
       if (currQUestion < questionList.length) {
         handleNextButton();
       }
-      // else{
-      //     startQuiz();
-      // }
     })
     document.getElementById("prev-btn").addEventListener("click", () => {
       if (currQUestion > 0) {
         handlePrevButton();
       }
-      // else{
-      //     startQuiz();
-      // }
     })
     document.getElementById("submit-btn").addEventListener("click", () => {
       handleSubmitButton();
@@ -66,11 +59,9 @@ function fetchQuestions() {
 
       questionList = data.data.questions;
       attemptHistory = Array(questionList.length).fill(0);
-      console.log(attemptHistory);
       showQuestion();
       min = questionList.length;
       sec = 0;
-      console.log(min);
       timer = setInterval(() => setTimer(), 1000);
     });
 
@@ -90,9 +81,8 @@ function showQuestion() {
     answerButtonsEL.appendChild(button);
 
     document.getElementById("question-count").innerHTML = (currQUestion + 1) + '/' + questionList.length;
-    console.log(currentQuestion.answers[0]);
-    console.log(choice.id);
     button.dataset.id = choice.id;
+    button.dataset.point = currentQuestion.points;
     if (choice.id == currentQuestion.answers[0]) {
       button.dataset.correct = "true";
     } else {
@@ -115,7 +105,7 @@ function showQuestion() {
       });
     }
 
-    button.addEventListener("click", selectAnswer);
+    button.addEventListener("click", selectAnswer,);
   });
 }
 
@@ -128,14 +118,15 @@ function resetState() {
 
 
 function selectAnswer(e) {
+  e.stopPropagation();
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
   attemptHistory[currQUestion] = selectedBtn.dataset.id;
 
-  console.log(attemptHistory);
   if (isCorrect) {
     selectedBtn.classList.add("correct");
-    score++;
+    score += parseInt(selectedBtn.dataset.point);
+    // update score
   } else {
     selectedBtn.classList.add("incorrect");
   }
@@ -158,9 +149,6 @@ function handleNextButton() {
   if (currQUestion < questionList.length) {
     showQuestion();
   }
-  // else{
-  //     showScore();
-  // }
 }
 
 function handlePrevButton() {
@@ -171,32 +159,21 @@ function handlePrevButton() {
     currQUestion--;
     showQuestion();
   }
-  // else{
-  //     showScore();
-  // }
 }
 
 function handleSubmitButton() {
 
-  console.log(isSubmitEvent);
   if (isSubmitEvent) {
-    confirm("Are you sure");
-    isSubmitEvent = !isSubmitEvent;
-    document.getElementById("submit-btn").innerHTML = "Play Again";
-    document.getElementById("next-btn").style.visibility = "hidden";
-    document.getElementById("question-count").style.visibility = "hidden";
-    document.getElementById("prev-btn").style.visibility = "hidden";
-    document.getElementById("showtime").style.visibility = "hidden";
-    showScore();
+    if (confirm("Are you sure?")) {
+      isSubmitEvent = !isSubmitEvent;
+      document.getElementById("submit-btn").innerHTML = "Play Again";
+      document.getElementById("next-btn").style.visibility = "hidden";
+      document.getElementById("question-count").style.visibility = "hidden";
+      document.getElementById("prev-btn").style.visibility = "hidden";
+      document.getElementById("showtime").style.visibility = "hidden";
+      showScore();
+    }
   } else {
-    // isSubmitEvent = !isSubmitEvent;
-    // document.getElementById("submit-btn").innerHTML = "Submit Score";
-    // document.getElementById("next-btn").style.visibility = "visible";
-    // document.getElementById("question-count").style.visibility = "visible";
-    // document.getElementById("prev-btn").style.visibility = "visible";
-    // document.getElementById("showtime").style.visibility = "visible";
-    //prepareAttempt();
-
     location.href = `./../index.html`;
   }
 }
@@ -206,7 +183,6 @@ function setTimer() {
 
     document.getElementById("showtime").innerHTML = min + ":" + (sec > 9 ? sec : '0' + sec);
     sec = parseInt(sec) - 1;
-    // tim = setTimeout(setTimer(), 1000);
   }
   else {
 
@@ -221,7 +197,6 @@ function setTimer() {
       document.getElementById("showtime").innerHTML = min + ":" + (sec > 9 ? sec : '0' + sec);
       min = parseInt(min) - 1;
       sec = 59;
-      // tim = setTimeout(setTimer(), 1000);
     }
 
   }
