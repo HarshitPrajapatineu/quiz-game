@@ -1,0 +1,411 @@
+{
+  "status": "success",
+  "message": "Your file has been successfully converted.",
+  "data": {
+    "filename": "getmarked-practice-0.docx",
+    "num_of_pages": 4.0,
+    "questions": [
+      {
+        "id": "2568481",
+        "title": "Q001 Use the following table to ans...Which is the most expensive car on the list?",
+        "category": "MCQ",
+        "stimulus": "<div> <div>Use the following table to answer the next 2 questions:</div> <table style=\"border: 1px solid #eeeeee;\"><tr><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Brand of Car</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Make of Car</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Cost ($)</div></td></tr><tr><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Toyota</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>RAV4</div></td> <td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>35,000</div></td></tr><tr> <td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Ford</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>F-Series</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>38,000</div></td></tr><tr> <td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Tesla</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Model 3</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>80,000</div></td></tr> <tr><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Honda</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Civic</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>27,600</div></td></tr></table> <div>   </div> </div>",
+        "prompt": "<div> <div> 1. Which is the most expensive car on the list? </div> </div>",
+        "answers": [
+          "c"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " Toyota RAV4"
+          },
+          {
+            "id": "b",
+            "content": " Ford F-Series"
+          },
+          {
+            "id": "c",
+            "content": " Tesla Model 3"
+          },
+          {
+            "id": "d",
+            "content": " Honda Civic"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568482",
+        "title": "Q002 Use the following table to ans...Which are the two cheapest cars on the list?",
+        "category": "MRQ",
+        "stimulus": "<div> <div>Use the following table to answer the next 2 questions:</div> <table style=\"border: 1px solid #eeeeee;\"><tr><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Brand of Car</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Make of Car</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Cost ($)</div></td></tr><tr><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Toyota</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>RAV4</div></td> <td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>35,000</div></td></tr><tr> <td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Ford</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>F-Series</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>38,000</div></td></tr><tr> <td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Tesla</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Model 3</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>80,000</div></td></tr> <tr><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>Honda</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"> <div>Civic</div></td><td style=\"padding: 5px; border: 1px solid #eeeeee;\"><div>27,600</div></td></tr></table> <div>   </div> </div>",
+        "prompt": "<div> <div> 2. Which are the two cheapest cars on the list?</div> </div>",
+        "answers": [
+          "a"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " Toyota RAV4"
+          },
+          {
+            "id": "b",
+            "content": " Ford F-Series"
+          },
+          {
+            "id": "c",
+            "content": " Tesla Model 3"
+          },
+          {
+            "id": "d",
+            "content": " Honda Civic"
+          }
+        ],
+        "metadata": {
+          "Type": "Multiple Choice",
+          "Difficulty": "Hard",
+          "category": "Apply"
+        },
+        "points": 1.0
+      },
+      {
+        "id": "2568483",
+        "title": "Q003 The diagram below shows a child's swing. The swing is releas",
+        "category": "MCQ",
+        "prompt": "<div> <div> The diagram below shows a child's swing.</div> <div> <img src=\"https://digitaliserstorage.blob.core.windows.net/media/user_upload_files/user2__tHM1uEIE/23FV0TB7_KnCXfcEGBwUKgaQUjkLuaqtFkw4IqxUj.jpg\" /> </div> <div>The swing is released from point X.</div> <div>Which movement takes one period of oscillation?</div> </div>",
+        "answers": [
+          "c"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " From X to Y"
+          },
+          {
+            "id": "b",
+            "content": " From X to Z"
+          },
+          {
+            "id": "c",
+            "content": " From X to Z and back to X"
+          },
+          {
+            "id": "d",
+            "content": " From X to Z and back to Y"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568484",
+        "title": "Q004 Who was captain of the Titanic when it sank on April 15, 191",
+        "category": "MCQ",
+        "prompt": "<div> <div> Who was captain of the Titanic when it sank on April 15, 1912?</div> </div>",
+        "answers": [
+          "a"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " <div> Edward Smith </div>"
+          },
+          {
+            "id": "b",
+            "content": " <div> Christopher Columbus </div>"
+          },
+          {
+            "id": "c",
+            "content": " <div> Jack Sparrow </div>"
+          },
+          {
+            "id": "d",
+            "content": " <div> David Greene </div>"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568485",
+        "title": "Q005 ∫x+   sin⁡x1+   cos⁡x   dx is equal to",
+        "category": "MCQ",
+        "prompt": "<div> <div> <math><mrow><mo stretchy=\"false\">∫</mo><mrow><mfrac><mrow><mi>x</mi><mo>+</mo><mi>   </mi><mrow><mrow><mi mathvariant=\"normal\">sin</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mi>   </mi><mrow><mrow><mi mathvariant=\"normal\">cos</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></mfrac><mi>   </mi><mi>d</mi><mi>x</mi></mrow></mrow></math> is equal to</div> </div>",
+        "answers": [
+          "b"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " <math><mrow><mrow><mi mathvariant=\"normal\">log</mi></mrow><mo>⁡</mo><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>   </mi><mrow><mrow><mi mathvariant=\"normal\">cos</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></mfenced></mrow></mrow><mo>+</mo><mi>c</mi></math>"
+          },
+          {
+            "id": "b",
+            "content": " <math><mrow><mrow><mi mathvariant=\"normal\">log</mi></mrow><mo>⁡</mo><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>   </mi><mrow><mrow><mi mathvariant=\"normal\">sin</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></mfenced></mrow></mrow><mo>+</mo><mi>c</mi></math>"
+          },
+          {
+            "id": "c",
+            "content": " <math><mi>x</mi><mo>-</mo><mi>   </mi><mrow><mrow><mi mathvariant=\"normal\">tan</mi></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow><mo>+</mo><mi>c</mi></math>"
+          },
+          {
+            "id": "d",
+            "content": " <math><mi>x</mi><mi>   </mi><mrow><mrow><mi mathvariant=\"normal\">tan</mi></mrow><mo>⁡</mo><mrow><mfrac><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></mrow></math>"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568486",
+        "title": "Q006 Select the word whose underlin...",
+        "category": "MCQ",
+        "stimulus": "<div> <div>Select the word whose underlined part differs from the other three in pronunciation in the next 2 questions.</div> <div>   </div> </div>",
+        "prompt": "<div> <div> 6.</div> </div>",
+        "answers": [
+          "B"
+        ],
+        "choices": [
+          {
+            "id": "A",
+            "content": " am<u>a</u>zing"
+          },
+          {
+            "id": "B",
+            "content": " ch<u>a</u>rge"
+          },
+          {
+            "id": "C",
+            "content": " fem<u>a</u>le"
+          },
+          {
+            "id": "D",
+            "content": " t<u>a</u>ste"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568487",
+        "title": "Q007 Select the word whose underlin...",
+        "category": "MCQ",
+        "stimulus": "<div> <div>Select the word whose underlined part differs from the other three in pronunciation in the next 2 questions.</div> <div>   </div> </div>",
+        "prompt": "<div> <div> 7.</div> </div>",
+        "answers": [
+          "A"
+        ],
+        "choices": [
+          {
+            "id": "A",
+            "content": " br<u>ea</u>k"
+          },
+          {
+            "id": "B",
+            "content": " br<u>ea</u>th"
+          },
+          {
+            "id": "C",
+            "content": " thr<u>ea</u>d"
+          },
+          {
+            "id": "D",
+            "content": " tr<u>ea</u>d"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568488",
+        "title": "Q008 Select the word whose underlin...",
+        "category": "MCQ",
+        "stimulus": "<div> <div>Select the word whose underlined part differs from the other three in pronunciation in the next 2 questions.</div> <div>   </div> </div>",
+        "prompt": "<div> <div> 7.</div> </div>",
+        "answers": [
+          "A"
+        ],
+        "choices": [
+          {
+            "id": "A",
+            "content": " br<u>ea</u>k"
+          },
+          {
+            "id": "B",
+            "content": " br<u>ea</u>th"
+          },
+          {
+            "id": "C",
+            "content": " thr<u>ea</u>d"
+          },
+          {
+            "id": "D",
+            "content": " tr<u>ea</u>d"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568490",
+        "title": "Q009 Select the word whose underlin...",
+        "category": "MCQ",
+        "stimulus": "<div> <div>Select the word whose underlined part differs from the other three in pronunciation in the next 2 questions.</div> <div>   </div> </div>",
+        "prompt": "<div> <div> 7.</div> </div>",
+        "answers": [
+          "A"
+        ],
+        "choices": [
+          {
+            "id": "A",
+            "content": " br<u>ea</u>k"
+          },
+          {
+            "id": "B",
+            "content": " br<u>ea</u>th"
+          },
+          {
+            "id": "C",
+            "content": " thr<u>ea</u>d"
+          },
+          {
+            "id": "D",
+            "content": " tr<u>ea</u>d"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568491",
+        "title": "Q010 Select the word whose underlin...",
+        "category": "MCQ",
+        "stimulus": "<div> <div>Select the word whose underlined part differs from the other three in pronunciation in the next 2 questions.</div> <div>   </div> </div>",
+        "prompt": "<div> <div> 7.</div> </div>",
+        "answers": [
+          "A"
+        ],
+        "choices": [
+          {
+            "id": "A",
+            "content": " br<u>ea</u>k"
+          },
+          {
+            "id": "B",
+            "content": " br<u>ea</u>th"
+          },
+          {
+            "id": "C",
+            "content": " thr<u>ea</u>d"
+          },
+          {
+            "id": "D",
+            "content": " tr<u>ea</u>d"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568492",
+        "title": "Q011 The United States has 52 states.",
+        "category": "MCQ",
+        "prompt": "<div> <div>The United States has 52 states.</div> </div>",
+        "answers": [
+          "b"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " true"
+          },
+          {
+            "id": "b",
+            "content": " false"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568493",
+        "title": "Q012 Neil Armstrong was the first person to walk on the moon.",
+        "category": "MCQ",
+        "prompt": "<div> <div>Neil Armstrong was the first person to walk on the moon.</div> </div>",
+        "answers": [
+          "a"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " true"
+          },
+          {
+            "id": "b",
+            "content": " false"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568494",
+        "title": "Q013 United States of America entered WWI in 1917.",
+        "category": "MCQ",
+        "prompt": "<div> <div> United States of America entered WWI in 1917. </div> </div>",
+        "answers": [
+          "a"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " true"
+          },
+          {
+            "id": "b",
+            "content": " false"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568495",
+        "title": "Q014 Paris is the capital of Italy.",
+        "category": "MCQ",
+        "prompt": "<div> <div>Paris is the capital of Italy.</div> </div>",
+        "answers": [
+          "b"
+        ],
+        "choices": [
+          {
+            "id": "a",
+            "content": " true"
+          },
+          {
+            "id": "b",
+            "content": " false"
+          }
+        ],
+        "points": 1.0
+      },
+      {
+        "id": "2568496",
+        "title": "Q015 Select the word whose underlin...",
+        "category": "MCQ",
+        "stimulus": "<div> <div>Select the word whose underlined part differs from the other three in pronunciation in the next 2 questions.</div> <div>   </div> </div>",
+        "prompt": "<div> <div> 7.</div> </div>",
+        "answers": [
+          "A"
+        ],
+        "choices": [
+          {
+            "id": "A",
+            "content": " br<u>ea</u>k"
+          },
+          {
+            "id": "B",
+            "content": " br<u>ea</u>th"
+          },
+          {
+            "id": "C",
+            "content": " thr<u>ea</u>d"
+          },
+          {
+            "id": "D",
+            "content": " tr<u>ea</u>d"
+          }
+        ],
+        "points": 1.0
+      }
+    ]
+  }
+}
