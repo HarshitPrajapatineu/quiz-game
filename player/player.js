@@ -88,25 +88,28 @@ function showQuestion() {
     } else {
       button.dataset.correct = "false";
     }
-
-    if (attemptHistory[currQUestion]) {
-      if (attemptHistory[currQUestion] === button.dataset.id) {
-        if (button.dataset.correct === "true") {
-          button.classList.add("correct");
-        } else {
-          button.classList.add("incorrect");
-        }
-      }
-      Array.from(answerButtonsEL.children).forEach(button => {
-        if (button.dataset.correct === "true") {
-          button.classList.add("correct");
-        }
-        button.disabled = true;
-      });
-    }
-
     button.addEventListener("click", selectAnswer,);
+    
+    showAttemptedAnswer(button);
   });
+}
+
+function showAttemptedAnswer(button) {
+  if (attemptHistory[currQUestion]) {
+    if (attemptHistory[currQUestion] === button.dataset.id) {
+      if (button.dataset.correct === "true") {
+        button.classList.add("correct");
+      } else {
+        button.classList.add("incorrect");
+      }
+    }
+    Array.from(answerButtonsEL.children).forEach(button => {
+      if (button.dataset.correct === "true") {
+        button.classList.add("correct");
+      }
+      button.disabled = true;
+    });
+  }
 }
 
 
