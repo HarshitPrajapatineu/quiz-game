@@ -44,7 +44,7 @@ function prepareAttempt() {
       }
     })
     document.getElementById("submit-btn").addEventListener("click", () => {
-      handleSubmitButton();
+      handleSubmitButton(false);
     })
   }
 
@@ -161,11 +161,12 @@ function handlePrevButton() {
   }
 }
 
-function handleSubmitButton() {
+function handleSubmitButton(isTimeUp) {
 
   if (isSubmitEvent) {
-    if (confirm("Are you sure?")) {
+    if (isTimeUp || confirm("Are you sure?")) {
       isSubmitEvent = !isSubmitEvent;
+      clearInterval(timer);
       document.getElementById("submit-btn").innerHTML = "Play Again";
       document.getElementById("next-btn").style.visibility = "hidden";
       document.getElementById("question-count").style.visibility = "hidden";
@@ -189,7 +190,7 @@ function setTimer() {
     if (parseInt(min) == 0 && parseInt(sec) == 0) {
       document.getElementById("showtime").innerHTML = min + ":" + (sec > 9 ? sec : '0' + sec);
       alert("Time Up");
-      showScore();
+      handleSubmitButton(true);
 
     }
 
